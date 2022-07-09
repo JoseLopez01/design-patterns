@@ -46,9 +46,9 @@ export class WebDialog extends Dialog {
 }
 
 export class Aplication {
-  dialog!: Dialog;
+  private dialog!: Dialog;
 
-  init() {
+  private init() {
     const isWindows = Deno.build.os === 'windows';
 
     if (isWindows) {
